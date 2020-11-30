@@ -81,6 +81,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                             }
                         })
             }
-    }
+            R.id.showData -> {
+                startActivity(Intent(this@MainActivity, ListData::class.java))
+            }
+        }
     }
 }
